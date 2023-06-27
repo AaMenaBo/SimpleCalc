@@ -18,7 +18,6 @@ import javax.swing.JOptionPane;
  */
 public class SimpleCalcController {
 
-    private SimpleCalcView view;
     private SimpleCalcModel model;
     
     private final String info ="Esta es una calculadora simple por lo que tiene ciertas restriciones.\n"
@@ -29,7 +28,6 @@ public class SimpleCalcController {
             + "\nSi se ignoran las indicaiones se mostrara un mensaje de error";
 
     public SimpleCalcController(SimpleCalcView view) {
-        this.view = view;
         this.model = new SimpleCalcModel();
         view.txtOperation.addKeyListener(new KeyListener() {
             @Override
